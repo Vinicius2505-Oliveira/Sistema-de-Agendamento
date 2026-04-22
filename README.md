@@ -57,8 +57,8 @@ npm run dev
 
 Backend disponível em:
 
-* API: http://localhost:3001
-* Swagger: http://localhost:3001/api-docs
+* API: https://sistema-de-agendamento-production-5801.up.railway.app
+* Swagger: https://sistema-de-agendamento-production-5801.up.railway.app/api-docs
 
 ## Como rodar o frontend
 
@@ -68,7 +68,7 @@ npm run dev
 
 Frontend disponível em:
 
-* http://localhost:5173
+https://sistema-de-agendamento-x6hg-steel.vercel.app/login
 
 ## Credenciais para teste
 
