@@ -1,104 +1,119 @@
-# AgendaPro – Sistema de Agendamento
+# 🚀 AgendaPro – Sistema de Agendamento
 
-Projeto full stack desenvolvido com as tecnologias solicitadas.
+React
+Node.js
+Express
+Prisma
+PostgreSQL
+JWT
+Vercel
+Railway
 
-## Tecnologias utilizadas
+---
 
-* Front-end: React + Vite
-* Back-end: Node.js + Express
-* Autenticação: JWT (JSON Web Token)
-* Criptografia: bcryptjs
-* ORM: Prisma
-* Banco de dados: SQLite (ambiente local) / PostgreSQL (produção)
-* Documentação: Swagger
+## 📌 Descrição
 
-## Descrição
+Sistema web completo para gerenciamento de agendamentos, com autenticação segura, controle de acesso por perfil e API documentada com Swagger.
 
-Sistema web completo para gerenciamento de agendamentos, com autenticação segura, controle de acesso por perfil e API documentada.
+---
 
-## Funcionalidades
+## 🛠 Tecnologias utilizadas
 
-* Cadastro de usuário
-* Login com geração de token JWT
-* Senha armazenada com criptografia (bcrypt)
-* Controle de acesso por perfil (USER e ADMIN)
-* Listagem de serviços disponíveis
-* Criação de agendamentos
-* Usuário visualiza seus próprios agendamentos
-* Admin visualiza todos os agendamentos
-* Admin altera status dos agendamentos
-* Admin cadastra novos serviços
-* Documentação completa da API com Swagger
+- Frontend: React + Vite  
+- Backend: Node.js + Express  
+- Autenticação: JWT (JSON Web Token)  
+- Criptografia: bcryptjs  
+- ORM: Prisma  
+- Banco de dados: PostgreSQL (produção) e SQLite (desenvolvimento local)  
+- Documentação: Swagger  
 
-## Autenticação
+---
 
-O sistema utiliza JWT (JSON Web Token) para autenticação.
+## ⚙️ Funcionalidades
 
-Após o login, o token deve ser enviado no header das requisições protegidas:
+- Cadastro de usuário  
+- Login com geração de token JWT  
+- Senha criptografada (bcrypt)  
+- Controle de acesso por perfil (USER e ADMIN)  
+- Listagem de serviços disponíveis  
+- Criação de agendamentos  
+- Usuário visualiza seus próprios agendamentos  
+- Admin visualiza todos os agendamentos  
+- Admin altera status dos agendamentos  
+- Admin cadastra novos serviços  
+- Documentação completa da API  
+
+---
+
+## 🔐 Autenticação
+
+Após o login, o token deve ser enviado no header:
 
 Authorization: Bearer <token>
 
-Rotas protegidas utilizam middleware para validação do token e controle de acesso por perfil.
+---
 
-## Estrutura do projeto
+## 📂 Estrutura do projeto
 
-* backend/ → API em Node.js + Express + Prisma
-* frontend/ → Aplicação React
+backend/ → API Node.js + Express + Prisma  
+frontend/ → Aplicação React  
 
-## Como rodar o backend
+---
 
-cd backend
-cp .env.example .env
-npm install
-npx prisma generate
-npx prisma migrate dev --name init
-npm run prisma:seed
-npm run dev
+## 🚀 Acesso online
 
-Backend disponível em:
+- Frontend:  
+  https://sistema-de-agendamento-x6hg-steel.vercel.app/  
 
-* API: https://sistema-de-agendamento-production-5801.up.railway.app
-* Swagger: https://sistema-de-agendamento-production-5801.up.railway.app/api-docs
+- API:  
+  https://sistema-de-agendamento-production-5801.up.railway.app  
 
-## Como rodar o frontend
+- Swagger:  
+  https://sistema-de-agendamento-production-5801.up.railway.app/api-docs  
 
-cd frontend
-npm install
-npm run dev
+---
 
-Frontend disponível em:
+## 🔑 Credenciais para teste
 
-https://sistema-de-agendamento-x6hg-steel.vercel.app/login
+### 👑 Admin
+- Email: admin@agenda.com  
+- Senha: admin123  
 
-## Credenciais para teste
+### 👤 Usuário comum
+- Email: user@agenda.com  
+- Senha: user123  
 
-### Admin
+---
 
-Email: [admin@agenda.com]
-Senha: admin123
+## ▶️ Como rodar o backend
 
-### Usuário comum
+bash cd backend  # Copie manualmente o arquivo .env.example para .env  npm install npx prisma generate npx prisma migrate dev --name init npm run prisma:seed npm run dev 
 
-Email: [user@agenda.com]
-Senha: user123
+---
 
-## Deploy (produção)
+## ▶️ Como rodar o frontend
 
-Para ambiente de produção, recomenda-se:
+bash cd frontend npm install npm run dev 
 
-* Backend: Railway
-* Frontend: Vercel
-* Banco de dados: PostgreSQL
+---
 
-Após o deploy, lembre-se de configurar as variáveis de ambiente:
+## ☁️ Deploy
 
-Frontend:
+- Frontend: Vercel  
+- Backend: Railway  
+- Banco de dados: PostgreSQL  
+
+### Variáveis de ambiente
+
+Frontend:  
 VITE_API_URL = URL do backend publicado
 
-Backend:
-DATABASE_URL = conexão com PostgreSQL
-JWT_SECRET = chave secreta
+Backend:  
+DATABASE_URL = conexão com PostgreSQL  
+JWT_SECRET = chave secreta  
 
-## Autor
+---
 
-Vinícius de Oliveira Silva.
+## 👨‍💻 Autor
+
+**Vinícius de Oliveira Silva
